@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 .common-paragraph {
-    color: rgba(255,255,255,0.8);
-    margin: 10px 0;
+    color: rgba(0,0,0,0.8);
+    margin: 1rem 0;
+    line-height: 1.3rem;
 }
 .common-btn {
     padding: .8rem 1.5rem;
@@ -14,6 +15,10 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+.common-h2 {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 body {
@@ -36,4 +41,56 @@ body {
     color: white;
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+#header #header-banner p{
+    color: rgba(255,255,255,0.8);
+}
+
+
+#main #donate-today{
+    text-align: center;
+    margin: 5rem auto;
+    max-width: 50%;
+}
+#main #donate-today #donation-amount-container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+/* Here, label has its style */
+#main #donate-today #donation-amount-container > label{
+    padding: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgba(245, 245, 245, 0.9);
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+/* Visibility is hidden of the circle of radio button. */
+#main #donate-today #donation-amount-container input{
+    visibility: hidden;
+}
+
+/* selects and highlight the label only when radio input type is checked */
+#main #donate-today #donation-amount-container input[type="radio"]:checked + label{
+    border: 1px solid #FF5959;
+    color: #FF5959;
+}
+#main #donate-today #custom-amount{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #919191;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    transition: all 0.2s ease;
+}
+#main #donate-today #custom-amount:focus{
+    outline: none;
+    border-bottom: 2px solid #FF5959;
 }

@@ -20,7 +20,34 @@
                 </div>
             </section>
         </header>
-        <main id="main"></main>
+        <main id="main">
+            <section id="donate-today">
+                <h2 class="common-h2">Donate Today</h2>
+                <p class="common-paragraph">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Adipisci quisquam, unde aspernatur porro quibusdam corporis
+                    quia dolores odio.
+                </p>
+
+                <!-- This input selection was kinda tough
+                    inside the container we have to put input first and then label,
+                    so that we select where we clicked not the second one.-->
+                <div id="donation-amount-container">
+                    <input type="radio" name="donation-amount" id="100tk" />
+                    <label for="100tk"> 100tk</label>
+                    <input type="radio" name="donation-amount" id="200tk" />
+                    <label for="200tk"> 200tk</label>
+                    <input type="radio" name="donation-amount" id="500tk" />
+                    <label for="500tk"> 500tk</label>
+                    <input type="radio" name="donation-amount" id="1000tk" />
+                    <label for="1000tk"> 1000tk</label>
+                    <input type="radio" name="donation-amount" id="5000tk" />
+                    <label for="5000tk"> 5000tk</label>
+                </div>
+                <input type="number" id="custom-amount" placeholder="Other Amount (Taka)" />
+                <button class="common-btn">Donate Now</button>
+            </section>
+        </main>
         <footer id="footer"></footer>
     </body>
 </html>
