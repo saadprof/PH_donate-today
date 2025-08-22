@@ -3,3 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+.common-paragraph {
+    color: rgba(255,255,255,0.8);
+    margin: 10px 0;
+}
+.common-btn {
+    padding: .8rem 1.5rem;
+    background-color: #FF5959;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#header #header-banner{
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.3)), url('./images/donation0.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 10rem;
+    text-align: center;
+}
+#header #header-banner #banner-content{
+    max-width: 50%;
+    margin: 0 auto;
+}
+#header #header-banner h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
