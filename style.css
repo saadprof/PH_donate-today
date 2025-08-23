@@ -164,3 +164,34 @@ body {
     width: 45%;
     border-radius: 10px;
 }
+
+
+
+#main #get-updates{
+    max-width: 80%;
+    margin: 6rem auto;
+    text-align: center;
+}
+#main #get-updates p{
+    margin: 1rem auto;
+    max-width: 40%;
+}
+#main #get-updates .upadte-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: #fff4d6;
+    padding: 4rem;
+    width: 60%;
+    margin: 2rem auto;
+}
+#main #get-updates .upadte-box input{
+    padding: 0.8rem;
+    width: 80%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
