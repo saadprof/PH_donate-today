@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 .common-paragraph {
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
     margin: 1rem 0;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
 }
 .common-btn {
-    padding: .8rem 1.5rem;
-    background-color: #FF5959;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff5959;
     color: white;
     border: none;
     border-radius: 5px;
@@ -20,49 +20,53 @@
     font-size: 2rem;
     font-weight: 700;
 }
-.common-grey{
-    color: rgba(0,0,0,0.9);
+.common-grey {
+    color: rgba(0, 0, 0, 0.9);
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-#header #header-banner{
-    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.3)), url('./images/donation0.jpg');
+#header #header-banner {
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("./images/donation0.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     padding: 10rem;
     text-align: center;
 }
-#header #header-banner #banner-content{
+#header #header-banner #banner-content {
     max-width: 50%;
     margin: 0 auto;
 }
-#header #header-banner h1{
+#header #header-banner h1 {
     color: white;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
-#header #header-banner p{
-    color: rgba(255,255,255,0.8);
+#header #header-banner p {
+    color: rgba(255, 255, 255, 0.8);
 }
 
-
-#main #donate-today{
+#main #donate-today {
     text-align: center;
     margin: 5rem auto;
     max-width: 50%;
 }
-#main #donate-today #donation-amount-container{
+#main #donate-today #donation-amount-container {
     display: flex;
     justify-content: center;
     margin: 2rem 0;
 }
 
 /* Here, label has its style */
-#main #donate-today #donation-amount-container > label{
+#main #donate-today #donation-amount-container > label {
     padding: 2rem;
     border-radius: 5px;
     cursor: pointer;
@@ -74,16 +78,20 @@ body {
 }
 
 /* Visibility is hidden of the circle of radio button. */
-#main #donate-today #donation-amount-container input{
+#main #donate-today #donation-amount-container input {
     visibility: hidden;
 }
 
 /* selects and highlight the label only when radio input type is checked */
-#main #donate-today #donation-amount-container input[type="radio"]:checked + label{
-    border: 1px solid #FF5959;
-    color: #FF5959;
+#main
+    #donate-today
+    #donation-amount-container
+    input[type="radio"]:checked
+    + label {
+    border: 1px solid #ff5959;
+    color: #ff5959;
 }
-#main #donate-today #custom-amount{
+#main #donate-today #custom-amount {
     width: 100%;
     border: none;
     border-bottom: 2px solid #919191;
@@ -93,42 +101,66 @@ body {
     margin: 1rem 0;
     transition: all 0.2s ease;
 }
-#main #donate-today #custom-amount:focus{
+#main #donate-today #custom-amount:focus {
     outline: none;
-    border-bottom: 2px solid #FF5959;
+    border-bottom: 2px solid #ff5959;
 }
 
-
-#main #donate-plan{
+#main #donate-plan {
     max-width: 80%;
     margin: 3rem auto;
 }
-#main #donate-plan > h2, #donate-plan > p{
+#main #donate-plan > h2,
+#donate-plan > p {
     text-align: center;
     width: 50%;
     margin: 0 auto;
 }
-#main #donate-plan #plan-container{
+#main #donate-plan #plan-container {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin: 2rem 0;
 }
-#main #donate-plan #plan-container .plan{
-    border: 1px solid rgba(0,0,0,0.1);
+#main #donate-plan #plan-container .plan {
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem;
     border-radius: 10px;
 }
-#main #donate-plan #plan-container .food{
+#main #donate-plan #plan-container .food {
     background-color: #edf5f6;
 }
-#main #donate-plan #plan-container .shelter{
+#main #donate-plan #plan-container .shelter {
     background-color: #ffeeee;
 }
-#main #donate-plan #plan-container .education{
+#main #donate-plan #plan-container .education {
     background-color: #fff4d6;
 }
-#main #donate-plan #plan-container .plan h3{
+#main #donate-plan #plan-container .plan h3 {
     font-size: 1.5rem;
     margin-top: 1rem;
+}
+
+#main #donation-blogs {
+    max-width: 80%;
+    margin: 5rem auto;
+}
+#main #donation-blogs .blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* this will rotate every event div to row reverse position of donation blogs */
+#main #donation-blogs .blog:nth-child(even) {
+    flex-direction: row-reverse;
+}
+#main #donation-blogs .blog .blog-text {
+    max-width: 45%;
+}
+#main #donation-blogs .blog img {
+    width: 45%;
+    border-radius: 10px;
 }
