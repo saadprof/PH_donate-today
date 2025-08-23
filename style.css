@@ -20,6 +20,9 @@
     font-size: 2rem;
     font-weight: 700;
 }
+.common-grey{
+    color: rgba(0,0,0,0.9);
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -93,4 +96,39 @@ body {
 #main #donate-today #custom-amount:focus{
     outline: none;
     border-bottom: 2px solid #FF5959;
+}
+
+
+#main #donate-plan{
+    max-width: 80%;
+    margin: 3rem auto;
+}
+#main #donate-plan > h2, #donate-plan > p{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#main #donate-plan #plan-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+#main #donate-plan #plan-container .plan{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 2rem;
+    border-radius: 10px;
+}
+#main #donate-plan #plan-container .food{
+    background-color: #edf5f6;
+}
+#main #donate-plan #plan-container .shelter{
+    background-color: #ffeeee;
+}
+#main #donate-plan #plan-container .education{
+    background-color: #fff4d6;
+}
+#main #donate-plan #plan-container .plan h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
