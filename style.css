@@ -195,3 +195,20 @@ body {
     font-size: 1rem;
     outline: none;
 }
+
+
+#footer{
+    background-color: #0b0d17;
+    text-align: center;
+    padding: 2rem 0;
+}
+#footer #footer-content h2{
+    font-family: cursive;
+    color: #ff5959;
+    font-size: 1.8rem;
+}
+#footer #footer-content p{
+    color: rgba(255, 255, 255, 0.7);
+    margin: 1rem auto;
+    max-width: 40%;
+}
