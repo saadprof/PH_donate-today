@@ -212,3 +212,17 @@ body {
     margin: 1rem auto;
     max-width: 40%;
 }
+
+
+
+@media screen and (max-width: 639.5px){
+    #header #header-banner{
+        padding: 2rem;
+    }
+    #header #header-banner #banner-content{
+        max-width: 100%;
+    }
+    #header #header-banner h1{
+        font-size: 2rem;
+    }
+}
