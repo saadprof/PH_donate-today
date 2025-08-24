@@ -233,5 +233,8 @@ body {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    
+    #main #donate-today #donation-amount-container > label{
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
 }
