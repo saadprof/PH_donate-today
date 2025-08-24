@@ -256,4 +256,22 @@ body {
     #main #donation-blogs .blog img {
         width: 95%;
     }
+
+    #main #get-updates{
+        max-width: 95%;
+    }
+    #main #get-updates p{
+        max-width: 100%;
+        text-align: justify;
+    }
+    #main #get-updates .upadte-box{
+        flex-direction: column;
+        width: 95%;
+        padding: 2rem;
+        gap: 1rem;
+    }
+    #main #get-updates .upadte-box input{
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+    }
 }
