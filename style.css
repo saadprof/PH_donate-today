@@ -225,4 +225,13 @@ body {
     #header #header-banner h1{
         font-size: 2rem;
     }
+
+    #main #donate-today{
+        max-width: 90%;
+    }
+    #main #donate-today #donation-amount-container{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
 }
