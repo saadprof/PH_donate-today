@@ -165,18 +165,16 @@ body {
     border-radius: 10px;
 }
 
-
-
-#main #get-updates{
+#main #get-updates {
     max-width: 80%;
     margin: 6rem auto;
     text-align: center;
 }
-#main #get-updates p{
+#main #get-updates p {
     margin: 1rem auto;
     max-width: 40%;
 }
-#main #get-updates .upadte-box{
+#main #get-updates .upadte-box {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -185,7 +183,7 @@ body {
     width: 60%;
     margin: 2rem auto;
 }
-#main #get-updates .upadte-box input{
+#main #get-updates .upadte-box input {
     padding: 0.8rem;
     width: 80%;
     border: 2px solid rgba(0, 0, 0, 0.1);
@@ -196,53 +194,66 @@ body {
     outline: none;
 }
 
-
-#footer{
+#footer {
     background-color: #0b0d17;
     text-align: center;
     padding: 2rem 0;
 }
-#footer #footer-content h2{
+#footer #footer-content h2 {
     font-family: cursive;
     color: #ff5959;
     font-size: 1.8rem;
 }
-#footer #footer-content p{
+#footer #footer-content p {
     color: rgba(255, 255, 255, 0.7);
     margin: 1rem auto;
     max-width: 40%;
 }
 
-
-
-@media screen and (max-width: 639.5px){
-    #header #header-banner{
+@media screen and (max-width: 639.5px) {
+    #header #header-banner {
         padding: 2rem;
     }
-    #header #header-banner #banner-content{
+    #header #header-banner #banner-content {
         max-width: 100%;
     }
-    #header #header-banner h1{
+    #header #header-banner h1 {
         font-size: 2rem;
     }
 
-    #main #donate-today{
+    #main #donate-today {
         max-width: 90%;
     }
-    #main #donate-today #donation-amount-container{
+    #main #donate-today #donation-amount-container {
         flex-wrap: wrap;
         gap: 1rem;
     }
-    #main #donate-today #donation-amount-container > label{
+    #main #donate-today #donation-amount-container > label {
         padding: 1rem;
         font-size: 0.9rem;
     }
 
-
-    #main #donate-plan > h2, #donate-plan > p{
+    #main #donate-plan > h2,
+    #donate-plan > p {
         width: 100%;
     }
-    #main #donate-plan #plan-container{
+    #main #donate-plan #plan-container {
         flex-direction: column;
+    }
+
+    #main #donation-blogs {
+        max-width: 90%;
+    }
+    #main #donation-blogs .blog {
+        flex-direction: column-reverse;
+    }
+    #main #donation-blogs .blog:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    #main #donation-blogs .blog .blog-text {
+        max-width: 95%;
+    }
+    #main #donation-blogs .blog img {
+        width: 95%;
     }
 }
