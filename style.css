@@ -237,4 +237,12 @@ body {
         padding: 1rem;
         font-size: 0.9rem;
     }
+
+
+    #main #donate-plan > h2, #donate-plan > p{
+        width: 100%;
+    }
+    #main #donate-plan #plan-container{
+        flex-direction: column;
+    }
 }
